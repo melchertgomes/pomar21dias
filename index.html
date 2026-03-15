@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomar 21 Dias – A Fórmula Natural que Transforma Suas Plantas</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   RESET & BASE
+============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:        #1b8e3e;
+  --green-light:  #27ae60;
+  --green-dark:   #145a2c;
+  --yellow:       #f9c80e;
+  --yellow-dark:  #e0a800;
+  --orange:       #e67e22;
+  --red:          #e74c3c;
+  --dark:         #1a1a1a;
+  --gray:         #555;
+  --light:        #f7f9f5;
+  --white:        #ffffff;
+  --radius:       12px;
+  --shadow:       0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg:    0 15px 50px rgba(0,0,0,0.18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #f0f4ed;
+  color: var(--dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   STICKY TOP BAR
+============================================================ */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--green-dark);
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.topbar span { color: var(--yellow); }
+
+/* ============================================================
+   HERO SECTION
+============================================================ */
+.hero {
+  background: linear-gradient(135deg, #0f4c25 0%, #1b8e3e 50%, #27ae60 100%);
+  color: #fff;
+  padding: 80px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 860px;
+  margin: auto;
+  text-align: center;
+}
+
+.badge-top {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--dark);
+  font-weight: 800;
+  font-size: 13px;
+  padding: 6px 18px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(28px, 4.5vw, 52px);
+  font-weight: 900;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--yellow);
+}
+
+.hero-sub {
+  font-size: clamp(16px, 2vw, 21px);
+  opacity: 0.93;
+  max-width: 680px;
+  margin: 0 auto 30px;
+}
+
+/* Hero image */
+.hero-img-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto 30px;
+  max-width: 640px;
+  width: 100%;
+}
+
+.hero-img-wrap img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  display: block;
+}
+
+.hero-img-badge {
+  position: absolute;
+  bottom: -16px;
+  right: 20px;
+  background: var(--yellow);
+  color: var(--dark);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Social proof strip */
+.hero-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 36px auto 10px;
+  flex-wrap: wrap;
+}
+
+.hero-social .avatars {
+  display: flex;
+}
+
+.hero-social .avatars img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+  object-fit: cover;
+}
+.hero-social .avatars img:first-child { margin-left: 0; }
+
+.hero-social p { font-size: 14px; opacity: 0.92; }
+.hero-social p strong { color: var(--yellow); }
+
+/* Stars */
+.stars { color: var(--yellow); font-size: 22px; letter-spacing: 2px; }
+
+/* CTA Button */
+.btn-main {
+  display: inline-block;
+  background: linear-gradient(135deg, #f9c80e, #e0a800);
+  color: #111;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: clamp(18px, 2.5vw, 26px);
+  padding: 20px 50px;
+  border-radius: 60px;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(249,200,14,0.5), 0 0 0 6px rgba(249,200,14,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.btn-main:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 40px rgba(249,200,14,0.6), 0 0 0 8px rgba(249,200,14,0.25);
+}
+
+.btn-sub {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* ============================================================
+   PROBLEM → SOLUTION
+============================================================ */
+.section { padding: 70px 20px; }
+
+.container { max-width: 900px; margin: auto; }
+
+.section-label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.section-title em { font-style: normal; color: var(--green); }
+
+.section-desc {
+  text-align: center;
+  font-size: 17px;
+  color: var(--gray);
+  max-width: 660px;
+  margin: 0 auto 50px;
+}
+
+/* Problem boxes */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.problem-card {
+  background: #fff3f3;
+  border: 1.5px solid #ffc5c5;
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+}
+
+.problem-card .icon { font-size: 36px; margin-bottom: 10px; }
+
+.problem-card p { font-size: 15px; color: #666; margin-top: 6px; }
+
+.problem-card strong { color: var(--red); font-size: 16px; }
+
+/* Solution highlight */
+.solution-box {
+  background: linear-gradient(135deg, #e8f8ee, #d4f1e0);
+  border: 2px solid var(--green-light);
+  border-radius: 18px;
+  padding: 40px 36px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.solution-box h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 800;
+  color: var(--green-dark);
+  margin-bottom: 14px;
+}
+
+.solution-box p { font-size: 17px; color: #444; max-width: 620px; margin: 0 auto; }
+
+/* ============================================================
+   HOW IT WORKS - Timeline
+============================================================ */
+.how-section { background: var(--white); }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  max-width: 680px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 36px;
+  top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--green-light), var(--green-dark));
+  border-radius: 3px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 24px 0;
+  position: relative;
+}
+
+.step-num {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, var(--green-light), var(--green-dark));
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(27,142,62,0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.step-body h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+
+.step-body p { font-size: 15px; color: var(--gray); }
+
+/* ============================================================
+   BENEFITS GRID
+============================================================ */
+.ben-section { background: var(--light); }
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.ben-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 22px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--green-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ben-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ben-card .ben-icon { font-size: 42px; margin-bottom: 14px; }
+
+.ben-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.ben-card p { font-size: 14px; color: var(--gray); }
+
+/* ============================================================
+   PHOTO GALLERY
+============================================================ */
+.gallery-section { background: var(--white); }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+  display: block;
+}
+
+.gallery-item:hover img { transform: scale(1.07); }
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.65));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 20px 14px 12px;
+}
+
+/* ============================================================
+   WHAT'S INSIDE
+============================================================ */
+.inside-section { background: linear-gradient(135deg, #0f4c25, #1b8e3e); color: #fff; }
+
+.inside-section .section-title { color: #fff; }
+.inside-section .section-title em { color: var(--yellow); }
+.inside-section .section-desc { color: rgba(255,255,255,0.8); }
+
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.inside-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.inside-card .check { color: var(--yellow); font-size: 20px; margin-right: 8px; }
+
+.inside-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.inside-card p { font-size: 14px; opacity: 0.85; }
+
+/* ============================================================
+   BONUS SECTION
+============================================================ */
+.bonus-section { background: #fffbea; }
+
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.bonus-card {
+  background: #fff;
+  border: 2px dashed var(--yellow-dark);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.bonus-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--orange);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.bonus-card .icon { font-size: 40px; margin: 16px 0 10px; }
+
+.bonus-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.bonus-card p { font-size: 13px; color: var(--gray); }
+
+.bonus-value { color: var(--orange); font-weight: 700; font-size: 15px; margin-top: 10px; }
+
+/* ============================================================
+   TESTIMONIALS
+============================================================ */
+.testi-section { background: var(--light); }
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.testi-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.testi-card::before {
+  content: '"';
+  font-size: 80px;
+  font-family: Georgia, serif;
+  color: var(--green-light);
+  opacity: 0.15;
+  position: absolute;
+  top: 10px; left: 16px;
+  line-height: 1;
+}
+
+.testi-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.testi-header img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--green-light);
+}
+
+.testi-name { font-weight: 700; font-size: 16px; color: var(--dark); }
+
+.testi-location { font-size: 12px; color: var(--gray); }
+
+.testi-stars { color: var(--yellow); font-size: 16px; margin-bottom: 6px; }
+
+.testi-text { font-size: 15px; color: #444; font-style: italic; position: relative; z-index: 1; }
+
+.testi-result {
+  margin-top: 14px;
+  background: #e8f8ee;
+  border-left: 3px solid var(--green);
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+/* Featured testimonial */
+.testi-featured {
+  background: linear-gradient(135deg, #1b8e3e, #27ae60);
+  color: #fff;
+  border-radius: 18px;
+  padding: 36px;
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto 0;
+  box-shadow: var(--shadow-lg);
+}
+
+.testi-featured img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid var(--yellow);
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.testi-featured blockquote {
+  font-size: clamp(16px, 2vw, 20px);
+  font-style: italic;
+  opacity: 0.95;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.testi-featured cite { font-size: 15px; opacity: 0.8; font-style: normal; }
+
+/* ============================================================
+   SOCIAL PROOF COUNTER STRIP
+============================================================ */
+.counter-strip {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.counter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.counter-item { text-align: center; }
+
+.counter-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900;
+  color: var(--yellow);
+  line-height: 1;
+}
+
+.counter-label { font-size: 14px; opacity: 0.8; margin-top: 4px; }
+
+/* ============================================================
+   COMPARISON TABLE
+============================================================ */
+.compare-section { background: var(--white); }
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 15px;
+}
+
+.compare-table thead tr {
+  background: var(--green-dark);
+  color: #fff;
+}
+
+.compare-table thead th {
+  padding: 18px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.compare-table tbody tr:nth-child(even) { background: #f5fdf7; }
+
+.compare-table tbody td {
+  padding: 14px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+  color: var(--dark);
+}
+
+.compare-table tbody td:first-child { text-align: left; font-weight: 600; }
+
+.check-yes { color: var(--green); font-size: 22px; font-weight: 900; }
+.check-no  { color: var(--red);   font-size: 22px; }
+
+.compare-table .highlight-col { background: rgba(27,142,62,0.07); font-weight: 700; color: var(--green-dark); }
+
+/* ============================================================
+   PRICING
+============================================================ */
+.pricing-section { background: linear-gradient(135deg, #f0f4ed, #e8f8ee); }
+
+.price-box {
+  max-width: 520px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  border: 2px solid var(--green-light);
+}
+
+.price-header {
+  background: linear-gradient(135deg, #1b8e3e, #27ae60);
+  color: #fff;
+  padding: 30px 30px 24px;
+  text-align: center;
+}
+
+.price-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.price-header p { font-size: 14px; opacity: 0.85; }
+
+.price-body { padding: 32px 36px; }
+
+.price-original {
+  text-align: center;
+  font-size: 17px;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
+.price-original span {
+  text-decoration: line-through;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.price-current {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.price-current .from { font-size: 15px; color: var(--gray); }
+
+.price-current .value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--green-dark);
+  line-height: 1;
+}
+
+.price-current .cents { font-size: 30px; vertical-align: super; }
+
+.price-installment {
+  text-align: center;
+  font-size: 15px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.price-list { list-style: none; margin-bottom: 28px; }
+
+.price-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e0e0e0;
+  font-size: 15px;
+}
+
+.price-list li:last-child { border: none; }
+
+.price-list li .icon { font-size: 20px; }
+
+.price-discount-badge {
+  background: var(--red);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+  max-width: 200px;
+}
+
+/* ============================================================
+   GUARANTEE
+============================================================ */
+.guarantee-section { background: var(--white); }
+
+.guarantee-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  background: linear-gradient(135deg, #fff8e1, #fff3cd);
+  border: 2px solid var(--yellow-dark);
+  border-radius: 18px;
+  padding: 36px;
+  max-width: 720px;
+  margin: auto;
+  box-shadow: var(--shadow);
+}
+
+.guarantee-icon { font-size: 80px; flex-shrink: 0; }
+
+.guarantee-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--green-dark);
+  margin-bottom: 12px;
+}
+
+.guarantee-content p { font-size: 16px; color: #444; }
+
+/* ============================================================
+   FAQ
+============================================================ */
+.faq-section { background: var(--light); }
+
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 20px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 24px;
+  color: var(--green);
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+  font-size: 15px;
+  color: var(--gray);
+  padding: 0 24px;
+}
+
+.faq-item.open .faq-answer { max-height: 300px; padding: 0 24px 20px; }
+.faq-item.open .faq-question::after { content: '–'; }
+
+/* ============================================================
+   SCARCITY BAR
+============================================================ */
+.scarcity-bar {
+  background: var(--red);
+  color: #fff;
+  text-align: center;
+  padding: 16px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+  letter-spacing: 0.5px;
+}
+
+.scarcity-bar span { text-decoration: underline; }
+
+/* ============================================================
+   FINAL CTA
+============================================================ */
+.final-cta {
+  background: linear-gradient(135deg, #0f4c25 0%, #1b8e3e 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.final-cta h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 900;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.final-cta h2 em { font-style: normal; color: var(--yellow); }
+
+.final-cta p { font-size: 18px; opacity: 0.9; margin-bottom: 36px; }
+
+.final-cta .safe-icons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.final-cta .safe-icons div { display: flex; align-items: center; gap: 6px; }
+
+/* ============================================================
+   FOOTER
+============================================================ */
+footer {
+  background: #111;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
+}
+
+.pulse { animation: pulse 2.2s ease-in-out infinite; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.7s ease forwards; }
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 600px) {
+  .guarantee-box { flex-direction: column; align-items: center; text-align: center; }
+  .timeline::before { left: 30px; }
+  .step-num { width: 60px; height: 60px; font-size: 22px; }
+  .price-current .value { font-size: 50px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- TOP BAR                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="topbar">
+  🌿 <span>OFERTA POR TEMPO LIMITADO</span> – Acesso Imediato + 3 Bônus Exclusivos
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HERO                                                    -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner fade-up">
+
+    <div class="badge-top">🌳 Método Comprovado por +47.000 Pessoas</div>
+
+    <h1>
+      Descubra a Fórmula Natural que Faz Qualquer Planta Produzir<br>
+      <em>Frutos em Apenas 21 Dias</em> — Mesmo em Varandas e Apartamentos
+    </h1>
+
+    <p class="hero-sub">
+      Esqueça produtos químicos caros e anos de espera. Com ingredientes que você já tem em casa,
+      você vai transformar suas plantas em verdadeiros pomares produtivos. Método simples, barato e 100% natural.
+    </p>
+
+    <div class="hero-img-wrap">
+      <img
+        src="https://sspark.genspark.ai/cfimages?u1=3iRJSZnYP%2FLBJ%2B7FnSiPBk%2B265Ei9qyerLmYChTgiIUPTjYlsfgVInpXDE3vMozNyCa8LkyzrvIW2%2FcdY4%2FCVda30Mjy%2BE3lQLxq%2BJH8Oe6JWvxQZ3EiLQWdbfF3a1s4gV4yzLJBWDujKfRKB6bQFrNPJhINleD0pu6hX3yfYJlmwQ%3D%3D&u2=tuGBV%2Bx0fuarsVnn&width=2560"
+        alt="Árvore frutífera com abundância de frutos"
+      >
+      <div class="hero-img-badge">🍋 Resultados em 21 dias</div>
+    </div>
+
+    <div style="margin-top: 44px;">
+      <div class="stars">★★★★★</div>
+      <p style="font-size:13px; margin: 6px 0 26px; opacity:0.85;">4.9/5 — Mais de <strong>12.800 avaliações</strong></p>
+    </div>
+
+    <a href="https://checkout.perfectpay.com.br/pay/PPU38CQ90QM" class="btn-main pulse">
+      🌿 QUERO COMEÇAR AGORA COM DESCONTO
+    </a>
+
+    <div class="btn-sub">
+      🔒 Compra 100% segura &nbsp;|&nbsp; ⚡ Acesso imediato &nbsp;|&nbsp; 🎁 3 bônus incluídos
+    </div>
+
+    <div class="hero-social" style="margin-top: 30px;">
+      <div class="avatars">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="">
+        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="">
+        <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="">
+      </div>
+      <p><strong>+47.000 pessoas</strong> já transformaram seus jardins com esse método</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- COUNTER STRIP                                           -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="counter-strip">
+  <div class="counter-grid">
+    <div class="counter-item">
+      <div class="counter-num">47.000+</div>
+      <div class="counter-label">Alunos Satisfeitos</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-num">21</div>
+      <div class="counter-label">Dias para Resultados</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-num">4.9★</div>
+      <div class="counter-label">Avaliação Média</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-num">98%</div>
+      <div class="counter-label">Aprovação dos Alunos</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-num">7</div>
+      <div class="counter-label">Anos de Pesquisa</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PROBLEM                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-label">O Problema</div>
+    <h2 class="section-title">Você se identifica com algum desses<br><em>problemas frustrantes?</em></h2>
+    <p class="section-desc">Milhares de brasileiros sofrem com isso todos os dias — e a solução é mais simples do que você imagina.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon">😩</div>
+        <strong>Plantas que não frutificam</strong>
+        <p>Você cuida, rega, aduba… e nada. Só folhas e mais folhas, nunca frutos.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">💸</div>
+        <strong>Gastando fortuna em produtos</strong>
+        <p>Fertilizantes caros, pesticidas, adubos importados — dinheiro jogado fora.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🏢</div>
+        <strong>"Moro em apartamento"</strong>
+        <p>Acha que precisa de quintal grande para ter seu próprio pomar. Spoiler: não precisa.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">⏳</div>
+        <strong>Esperando anos sem resultado</strong>
+        <p>Dizem que é normal esperar 5, 10 anos. Com nosso método, são apenas 21 dias.</p>
+      </div>
+    </div>
+
+    <div class="solution-box">
+      <h3>🎉 Existe uma Solução Natural, Simples e Comprovada!</h3>
+      <p>
+        O <strong>Pomar 21 Dias</strong> é um método desenvolvido com base em técnicas
+        ancestrais e comprovadas pela ciência moderna que ativa o potencial produtivo
+        de qualquer planta usando ingredientes que você já tem na cozinha — e sem gastar quase nada.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HOW IT WORKS                                            -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section how-section">
+  <div class="container">
+    <div class="section-label">Como Funciona</div>
+    <h2 class="section-title">3 Passos Simples para um<br><em>Pomar Abundante</em></h2>
+    <p class="section-desc">Qualquer pessoa consegue aplicar — mesmo sem experiência alguma em jardinagem.</p>
+
+    <div class="timeline">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>📖 Acesse o Método Completo</h4>
+          <p>Logo após a compra, você recebe acesso imediato ao material completo em vídeo e PDF com todos os segredos do Pomar 21 Dias, explicados de forma clara e passo a passo.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>🧪 Prepare a Fórmula Natural em Casa</h4>
+          <p>Usando apenas ingredientes caseiros e baratos, você prepara a fórmula ativadora em menos de 10 minutos. Sem produtos químicos, sem complicação, sem custo alto.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>🌳 Aplique e Colha em 21 Dias</h4>
+          <p>Aplique na sua planta conforme o cronograma incluído no método e veja os primeiros resultados surgindo nos primeiros dias. Em 21 dias, sua planta estará produzindo como nunca antes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GALLERY                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section gallery-section">
+  <div class="container">
+    <div class="section-label">Resultados Reais</div>
+    <h2 class="section-title">Antes e Depois — Veja o que o <em>Método Faz</em></h2>
+    <p class="section-desc">Plantas que nunca produziram nada voltaram a dar frutos em menos de um mês.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://sspark.genspark.ai/cfimages?u1=bOdpj0TEKXhH%2Fi9D9pyzbrri5nFzNyM0oqGTvymGx1FYw0a0s5lL3ibgWT6WCAoVrz24nbM%2BlQXQsqo9GQcQVKT5MOxFY2QFSN5ll1D9y8b8XJkopjZwWjorbw%3D%3D&u2=1ki5Fsb7WISz8Q9Z&width=2560" alt="Árvore com maçãs verdes abundantes">
+        <div class="gallery-caption">🍏 Produção abundante em 3 semanas</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://sspark.genspark.ai/cfimages?u1=kJ8NCfDnzVx83B%2Fs69eGCi%2Fhkew7Qan2jmBdVHdVlHq%2BaPPUj0sxma2uX6tjqV%2FY4gEVwHzzjvnGF47qQ7AZE6rVI7PnoZoSH8cJb%2FsiDBi0XWt%2Bs0d0dqJKzk6QizUhC3znXxO0sI2v0iM%3D&u2=k1%2BV3%2BK9f4FG539o&width=2560" alt="Fertilizante natural caseiro">
+        <div class="gallery-caption">🌿 Fórmula natural caseira preparada em 10 min</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://sspark.genspark.ai/cfimages?u1=DAUNx5Nvi9Ntv%2BtLwUvJo5zmlyHx1YCdWgKJojJ3pCyztjHeSElyngr9jae3iekVLxFr67MI8cykVe72GHBcPDpUOrfM9B0L9WFvz1igMeijIf2zuOEM3ncgjIHlr%2F91usF9%2B7m4g9f8zNNaHTsAwVbw&u2=W0BqKiAMqplqfJJv&width=2560" alt="Árvore frutífera tropical em vaso">
+        <div class="gallery-caption">🌴 Funciona até em vasos pequenos</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://sspark.genspark.ai/cfimages?u1=DRjeLaIrN3XPyB1GEU4D3Qd4GKeOdkb%2BMjmPiZGXKYDfSL5JiwLloT0c0hrUaT2uNq7CIAbW%2BYIzeuhNJAARx6lOBy7fUjpeOCEbYoKShK6XzdSX7gpXV7d9%2FkPbNuDmLetnFRRpU%2FXdZ%2BfknUddhrNzd%2FFO%2F09ca9jWRPfXo18HMU7UgEIXYXTc%2FYMbDx0YpVMR%2BsTXJh%2FLTabCqvhQUvGCNUErAV%2BUlXY1eAWQrEyQcfB5ldtbDwPp9gM&u2=Vr%2F556rom7%2FqK1JZ&width=2560" alt="Jardim na varanda">
+        <div class="gallery-caption">🏡 Ideal para varanda e apartamento</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://sspark.genspark.ai/cfimages?u1=UDDNXTgEPY%2BADVDwmLnBrmWz1%2FnHIrT4lkFR9iKM69%2Bmbgi3HPV5OINR38J9Glc5sdXK%2FlrmBCjbbV7cG5nagbvbnaYiI1ZZHlObzB22zWvHo%2Bgj1DwZt7iMRRp%2BHTNhRaA6liB88YT15sCW%2BSd%2Fli5m858Zvl8bl%2BuPYmE6fk221FSyp4PWqESvlfvObln1&u2=yKA0XJh4tpY60tx%2F&width=2560" alt="Preparando fertilizante caseiro com resíduos de cozinha">
+        <div class="gallery-caption">♻️ Use resíduos da cozinha como nutriente</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://sspark.genspark.ai/cfimages?u1=pmcdoLqvfyAhk5VOYZGY1WlA32Jgh%2F%2FRXrB8STGjmjbk2s7YspilBcBiSZ7iR%2FLxRs36wRObEXLC2LwhOs6lWWaadfFnCac5D%2BgIiNFoSossvWB1O749OxgFbuyqe9A78SdWNM%2BegeYjXakHVCttQ8Ivg7%2Bv&u2=JAlMD6t0vquWfDqe&width=2560" alt="Jardim produtivo">
+        <div class="gallery-caption">🌱 Jardins produtivos em qualquer espaço</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- WHAT'S INSIDE                                           -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section inside-section">
+  <div class="container">
+    <div class="section-label" style="color: var(--yellow);">O Conteúdo</div>
+    <h2 class="section-title">Tudo que Você Recebe no<br><em>Pomar 21 Dias</em></h2>
+    <p class="section-desc">Um sistema completo para transformar qualquer espaço em um pomar produtivo.</p>
+
+    <div class="inside-grid">
+      <div class="inside-card">
+        <h4><span class="check">✅</span> Módulo 1 – A Ciência por Trás do Método</h4>
+        <p>Entenda por que as plantas param de frutificar e como ativar o mecanismo natural de produção com ingredientes simples.</p>
+      </div>
+      <div class="inside-card">
+        <h4><span class="check">✅</span> Módulo 2 – A Fórmula dos 21 Dias</h4>
+        <p>O passo a passo completo da fórmula ativadora com ingredientes que você já tem em casa. Preparação em 10 minutos.</p>
+      </div>
+      <div class="inside-card">
+        <h4><span class="check">✅</span> Módulo 3 – Plantas Específicas</h4>
+        <p>Técnicas adaptadas para mais de 30 tipos de plantas: limoeiro, mamoeiro, aceroleira, maracujá, tomate e muito mais.</p>
+      </div>
+      <div class="inside-card">
+        <h4><span class="check">✅</span> Módulo 4 – Cultivo em Pequenos Espaços</h4>
+        <p>Como ter um pomar produtivo em vasos, varandas, sacadas e apartamentos. Sem precisar de jardim.</p>
+      </div>
+      <div class="inside-card">
+        <h4><span class="check">✅</span> Módulo 5 – Cronograma dos 21 Dias</h4>
+        <p>Um calendário dia a dia com o que fazer em cada etapa para garantir os melhores resultados sem errar.</p>
+      </div>
+      <div class="inside-card">
+        <h4><span class="check">✅</span> Módulo 6 – Manutenção e Colheita</h4>
+        <p>Como manter a produção contínua mês após mês, maximizar a colheita e nunca mais ter planta improdutiva.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BENEFITS                                                -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section ben-section">
+  <div class="container">
+    <div class="section-label">Vantagens</div>
+    <h2 class="section-title">Por que o <em>Pomar 21 Dias</em> é Diferente<br>de tudo que você já tentou?</h2>
+    <p class="section-desc">Não é teoria. É um método testado por mais de 47.000 pessoas em todo o Brasil.</p>
+
+    <div class="benefits-grid">
+      <div class="ben-card">
+        <div class="ben-icon">🌿</div>
+        <h4>100% Natural e Seguro</h4>
+        <p>Sem agrotóxicos, sem produtos químicos. Só ingredientes naturais que você já tem na cozinha. Seguro para crianças e animais.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">💰</div>
+        <h4>Custo Quase Zero</h4>
+        <p>A fórmula custa menos de R$5 para preparar. Chega de gastar centenas em fertilizantes industriais que não funcionam.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">⚡</div>
+        <h4>Resultados em 21 Dias</h4>
+        <p>Você começa a ver diferença nos primeiros dias. Em 3 semanas, suas plantas estarão produzindo como nunca antes.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">🏠</div>
+        <h4>Funciona em Qualquer Espaço</h4>
+        <p>Apartamento, varanda, quintal pequeno ou grande. O método foi adaptado para funcionar em qualquer condição.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">📱</div>
+        <h4>Acesso Vitalício</h4>
+        <p>Acesse pelo celular, tablet ou computador quando e onde quiser. Seu conteúdo estará sempre disponível.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">🎓</div>
+        <h4>Sem Conhecimento Prévio</h4>
+        <p>Funciona mesmo para quem nunca plantou nada na vida. O método é pensado para iniciantes do zero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- COMPARISON TABLE                                        -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section compare-section">
+  <div class="container">
+    <div class="section-label">Comparativo</div>
+    <h2 class="section-title"><em>Pomar 21 Dias</em> vs. Outras Abordagens</h2>
+    <p class="section-desc">Veja por que este método está deixando os outros para trás.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th style="background:#27ae60;">✅ Pomar 21 Dias</th>
+          <th>Fertilizantes Químicos</th>
+          <th>Método Tradicional</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Resultados rápidos (21 dias)</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-no">✗</td>
+          <td class="check-no">✗</td>
+        </tr>
+        <tr>
+          <td>Custo baixo (menos de R$5)</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-no">✗</td>
+          <td class="check-yes">✓</td>
+        </tr>
+        <tr>
+          <td>100% natural e sem químicos</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-no">✗</td>
+          <td class="check-yes">✓</td>
+        </tr>
+        <tr>
+          <td>Funciona em apartamentos</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-yes">✓</td>
+          <td class="check-no">✗</td>
+        </tr>
+        <tr>
+          <td>Passo a passo completo</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-no">✗</td>
+          <td class="check-no">✗</td>
+        </tr>
+        <tr>
+          <td>Sem precisar de experiência</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-no">✗</td>
+          <td class="check-no">✗</td>
+        </tr>
+        <tr>
+          <td>Garantia de 7 dias</td>
+          <td class="highlight-col check-yes">✓</td>
+          <td class="check-no">✗</td>
+          <td class="check-no">✗</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- TESTIMONIALS                                            -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section testi-section">
+  <div class="container">
+    <div class="section-label">Depoimentos</div>
+    <h2 class="section-title">O que Dizem Quem já <em>Transformou seu Jardim</em></h2>
+    <p class="section-desc">Histórias reais de pessoas comuns que usaram o método e tiveram resultados surpreendentes.</p>
+
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Maria Fernanda">
+          <div>
+            <div class="testi-name">Maria Fernanda S.</div>
+            <div class="testi-location">📍 São Paulo, SP</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Meu limoeiro ficou 3 anos sem dar um único fruto. Apliquei o método do Pomar 21 Dias e no décimo quarto dia apareceram as primeiras flores. Hoje colho limões todo mês! Não acreditei quando vi."</p>
+        <div class="testi-result">🍋 Resultado: +300% na produção em 21 dias</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Eduardo">
+          <div>
+            <div class="testi-name">Carlos Eduardo M.</div>
+            <div class="testi-location">📍 Belo Horizonte, MG</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Moro em apartamento e tenho apenas uma varanda de 4m². Hoje tenho tomateiros, pimenteiras e uma aceroleira carregada. O método funciona de verdade e minha família está impressionada."</p>
+        <div class="testi-result">🍅 Resultado: Pomar em varanda de 4m² funcionando!</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Juliana Rocha">
+          <div>
+            <div class="testi-name">Juliana Rocha F.</div>
+            <div class="testi-location">📍 Curitiba, PR</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Já gastei mais de R$800 em produtos e consultoria de jardinagem. Com o Pomar 21 Dias gastei menos de R$50 no total e minha horta está produzindo como nunca. Deveria ter encontrado isso antes!"</p>
+        <div class="testi-result">💰 Economia: mais de R$800 em produtos</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Roberto Lima">
+          <div>
+            <div class="testi-name">Roberto Lima A.</div>
+            <div class="testi-location">📍 Fortaleza, CE</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Sou aposentado e estava desanimado com meu jardim que não produzia nada. O método me deu uma nova esperança. Em 18 dias, meu mamoeiro começou a dar frutos pela primeira vez em 2 anos!"</p>
+        <div class="testi-result">🍈 Resultado: Mamoeiro frutificando após 2 anos</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Amanda Silva">
+          <div>
+            <div class="testi-name">Amanda Ribeiro O.</div>
+            <div class="testi-location">📍 Porto Alegre, RS</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Nunca pensei que fosse conseguir — zero experiência com plantas! O passo a passo do método é tão claro que qualquer pessoa consegue. Minha filha de 12 anos até me ajudou a preparar a fórmula!"</p>
+        <div class="testi-result">👨‍👧 Resultado: Família inteira envolvida no pomar</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Paulo Henrique">
+          <div>
+            <div class="testi-name">Paulo Henrique T.</div>
+            <div class="testi-location">📍 Rio de Janeiro, RJ</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Tenho 5 plantas no meu quintal e todas estão carregadas depois do método. Minha vizinha perguntou o que eu faço diferente — indiquei o Pomar 21 Dias e ela também está adorando os resultados!"</p>
+        <div class="testi-result">🌳 Resultado: 5 plantas produzindo ao mesmo tempo</div>
+      </div>
+
+    </div>
+
+    <!-- Featured testimonial -->
+    <div class="testi-featured">
+      <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Depoimento destaque">
+      <div class="stars" style="font-size:24px; margin-bottom: 16px;">★★★★★</div>
+      <blockquote>
+        "Depois de 40 anos morando no campo e achando que sabia tudo sobre plantas, o Pomar 21 Dias
+        me ensinou técnicas que nunca vi em lugar nenhum. Meu pomar produziu 3x mais nessa última safra
+        e economizei mais de R$2.000 em insumos. Recomendo de olhos fechados para qualquer pessoa!"
+      </blockquote>
+      <cite>— Dona Benedita Carneiro, 63 anos, agricultora, Minas Gerais</cite>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BONUS                                                   -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bonus-section">
+  <div class="container">
+    <div class="section-label" style="color: var(--orange);">🎁 BÔNUS EXCLUSIVOS</div>
+    <h2 class="section-title">Compre Hoje e Ganhe <em>3 Bônus Gratuitos</em><br>no valor de R$197</h2>
+    <p class="section-desc">Esses bônus são oferecidos apenas para quem adquirir o método agora. Não há prazo para quando esse bônus será retirado.</p>
+
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <div class="bonus-badge">🎁 BÔNUS 1</div>
+        <div class="icon">📋</div>
+        <h4>Guia das 50 Plantas</h4>
+        <p>Receitas específicas da fórmula para 50 tipos diferentes de plantas frutíferas, ervas e hortaliças.</p>
+        <div class="bonus-value">Valor: R$67 — Seu: GRÁTIS</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-badge">🎁 BÔNUS 2</div>
+        <div class="icon">🌧️</div>
+        <h4>Kit Clima Adverso</h4>
+        <p>Como adaptar o método para períodos de seca, chuva excessiva, frio intenso e verão escaldante.</p>
+        <div class="bonus-value">Valor: R$67 — Seu: GRÁTIS</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-badge">🎁 BÔNUS 3</div>
+        <div class="icon">👥</div>
+        <h4>Grupo VIP de Suporte</h4>
+        <p>Acesso ao grupo exclusivo com mais de 8.000 membros ativos onde você tira dúvidas e compartilha resultados.</p>
+        <div class="bonus-value">Valor: R$63 — Seu: GRÁTIS</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 30px; padding: 20px; background:#fff; border-radius: 12px; border: 2px solid var(--yellow-dark);">
+      <p style="font-size: 18px; color: #444;">
+        Valor Total dos Bônus: <span style="text-decoration:line-through; color:#999;">R$197,00</span>
+        &nbsp;→&nbsp;
+        <strong style="color: var(--green); font-size: 22px; font-family: Montserrat, sans-serif;">TUDO GRÁTIS PARA VOCÊ</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PRICING                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section pricing-section" id="comprar">
+  <div class="container">
+    <div class="section-label">Investimento</div>
+    <h2 class="section-title">Comece Hoje por um <em>Valor Simbólico</em></h2>
+    <p class="section-desc">Quanto vale colher seus próprios frutos, economizar em alimentação e ter a satisfação de um pomar em casa?</p>
+
+    <div class="price-box">
+      <div class="price-header">
+        <h3>🌿 Pomar 21 Dias — Completo</h3>
+        <p>Método + 6 Módulos + 3 Bônus + Suporte VIP + Acesso Vitalício</p>
+      </div>
+      <div class="price-body">
+        <div class="price-discount-badge">🔥 60% DE DESCONTO HOJE</div>
+        <div class="price-original">De: <span>R$ 197,00</span></div>
+        <div class="price-current">
+          <div class="from">Por apenas</div>
+          <div class="value">R$<span class="cents"></span>47</div>
+        </div>
+        <div class="price-installment">ou 3x de R$16,33 sem juros no cartão</div>
+
+        <ul class="price-list">
+          <li><span class="icon">📹</span> Acesso a todos os módulos em vídeo</li>
+          <li><span class="icon">📄</span> Material em PDF para download</li>
+          <li><span class="icon">📋</span> Bônus 1: Guia das 50 Plantas</li>
+          <li><span class="icon">🌧️</span> Bônus 2: Kit Clima Adverso</li>
+          <li><span class="icon">👥</span> Bônus 3: Grupo VIP de Suporte</li>
+          <li><span class="icon">♾️</span> Acesso vitalício — sem mensalidade</li>
+          <li><span class="icon">🛡️</span> Garantia de 7 dias</li>
+        </ul>
+
+        <a href="https://checkout.perfectpay.com.br/pay/PPU38CQ90QM" class="btn-main pulse" style="display:block; text-align:center; font-size:20px; padding: 20px 30px;">
+          ✅ QUERO MEU ACESSO AGORA
+        </a>
+
+        <p style="text-align:center; margin-top: 16px; font-size: 13px; color: #888;">
+          🔒 Pagamento 100% seguro · 🏦 Pix, Boleto ou Cartão · ⚡ Acesso em minutos
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GUARANTEE                                              -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section guarantee-section">
+  <div class="container">
+    <div class="guarantee-box">
+      <div class="guarantee-icon">🛡️</div>
+      <div class="guarantee-content">
+        <h3>Garantia Total de 7 Dias — Sem Perguntas</h3>
+        <p>
+          Experimente o Pomar 21 Dias por 7 dias completos. Se por qualquer motivo você não ficar satisfeito,
+          basta enviar um e-mail e devolveremos <strong>100% do seu dinheiro</strong> — sem burocracia,
+          sem questionamentos, sem letras miúdas. Você não tem nada a perder e um pomar a ganhar.
+        </p>
+        <p style="margin-top: 12px; font-size: 14px; color: #888;">
+          Mais de 47.000 alunos e taxa de reembolso inferior a 0.5%. Isso é confiança.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SCARCITY                                                -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="scarcity-bar">
+  ⏰ ATENÇÃO: O preço de R$47 é uma promoção por tempo limitado. <span>Após esse período, o valor voltará a R$197.</span>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FAQ                                                     -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-label">Dúvidas Frequentes</div>
+    <h2 class="section-title">Perguntas <em>Frequentes</em></h2>
+    <p class="section-desc">Tire suas dúvidas antes de fazer a melhor decisão para o seu jardim.</p>
+
+    <div style="max-width: 700px; margin: auto;">
+
+      <div class="faq-item">
+        <button class="faq-question">Funciona mesmo para quem não tem experiência com plantas?</button>
+        <div class="faq-answer">Sim! O método foi criado especialmente para iniciantes. O passo a passo é tão claro e detalhado que qualquer pessoa — sem nenhum conhecimento prévio — consegue aplicar e ter resultados. Nossos alunos têm entre 18 e 75 anos e os mais satisfeitos são justamente os que nunca tinham plantado nada.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Funciona em apartamento ou varanda pequena?</button>
+        <div class="faq-answer">Com certeza! Isso é uma das maiores vantagens do Pomar 21 Dias. Existe um módulo inteiro dedicado a cultivo em espaços pequenos — vasos, caixotes, varandas e sacadas. Você vai se surpreender com o que é possível produzir em poucos metros quadrados.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Os ingredientes da fórmula são difíceis de encontrar?</button>
+        <div class="faq-answer">Não! Todos os ingredientes estão em qualquer cozinha brasileira. São itens do dia a dia que você provavelmente já tem em casa agora mesmo. Sem precisar comprar nada especial.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Quanto tempo leva para ver os primeiros resultados?</button>
+        <div class="faq-answer">A maioria dos nossos alunos começa a ver mudanças visíveis entre o 7º e o 14º dia após a aplicação da fórmula. Os resultados completos aparecem dentro do prazo de 21 dias, mas muitos relatam surpreendentemente que as plantas floresceram antes disso!</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Serve para qualquer tipo de planta frutífera?</button>
+        <div class="faq-answer">O método funciona para a grande maioria das plantas frutíferas. Há receitas específicas para mais de 50 tipos de plantas no Bônus 1 que acompanha o método. Limoeiro, mamoeiro, aceroleira, maracujazeiro, tomateiro, pimenteira, morangueiro e muito mais.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Como funciona o acesso ao material?</button>
+        <div class="faq-answer">Após a confirmação do pagamento, você recebe um e-mail com os dados de acesso à plataforma online. O material fica disponível 24 horas por dia, 7 dias por semana, pelo celular, tablet ou computador. O acesso é vitalício — sem mensalidade ou renovação.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">E se eu não gostar? Existe garantia?</button>
+        <div class="faq-answer">Sim! Você tem 7 dias de garantia total. Se por qualquer motivo não ficar satisfeito, basta enviar um e-mail solicitando o reembolso e devolvemos 100% do seu dinheiro — sem perguntas, sem burocracia. Você não tem risco nenhum.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FINAL CTA                                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="final-cta">
+  <div class="container">
+    <h2>
+      Está Pronto para Ter seu Próprio<br>
+      <em>Pomar em Casa?</em>
+    </h2>
+    <p>
+      Mais de 47.000 pessoas já transformaram seus jardins.<br>
+      Agora é a sua vez. Comece hoje por apenas R$47.
+    </p>
+
+    <a href="https://checkout.perfectpay.com.br/pay/PPU38CQ90QM" class="btn-main pulse">
+      🌿 QUERO COMEÇAR MEU POMAR AGORA
+    </a>
+
+    <div class="btn-sub" style="color: rgba(255,255,255,0.7); margin-top: 16px;">
+      ⚡ Acesso imediato &nbsp;|&nbsp; 🔒 Compra segura &nbsp;|&nbsp; 🛡️ Garantia de 7 dias
+    </div>
+
+    <div class="safe-icons">
+      <div>🔒 SSL Seguro</div>
+      <div>💳 Cartão, Pix ou Boleto</div>
+      <div>⚡ Acesso em Minutos</div>
+      <div>🛡️ Garantia 7 dias</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FOOTER                                                  -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<footer>
+  <p>© 2026 Pomar 21 Dias — Todos os direitos reservados.</p>
+  <p>
+    <a href="#">Política de Privacidade</a> &nbsp;·&nbsp;
+    <a href="#">Termos de Uso</a> &nbsp;·&nbsp;
+    <a href="#">Contato</a>
+  </p>
+  <p style="margin-top: 10px; font-size: 11px; max-width: 600px; margin: 10px auto 0;">
+    Os resultados apresentados são individuais e podem variar de pessoa para pessoa.
+    O Pomar 21 Dias é um produto digital. Após a confirmação do pagamento, o acesso é liberado imediatamente.
+  </p>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SCRIPTS                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<script>
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Scroll fade-in animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.ben-card, .testi-card, .step, .inside-card, .bonus-card, .gallery-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(25px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+
+// Countdown timer in scarcity bar
+(function() {
+  const deadline = new Date();
+  deadline.setHours(deadline.getHours() + 1, deadline.getMinutes() + 0, 0, 0);
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tick() {
+    const now = new Date();
+    let diff = Math.max(0, Math.floor((deadline - now) / 1000));
+    const m = Math.floor(diff / 60);
+    const s = diff % 60;
+    const el = document.querySelector('.scarcity-bar');
+    if (el) {
+      el.innerHTML = `⏰ ATENÇÃO: O preço especial expira em <span>${pad(m)}:${pad(s)}</span> — Após isso, o valor volta a R$197.`;
+    }
+    if (diff > 0) setTimeout(tick, 1000);
+  }
+  tick();
+})();
+</script>
+
+</body>
+</html>
